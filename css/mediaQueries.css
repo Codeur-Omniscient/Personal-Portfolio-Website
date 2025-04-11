@@ -1,0 +1,80 @@
+/* ===== MEDIA QUERIES ===== */
+@media screen and (max-width: 1024px) {
+  .welcome-content {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+
+  .welcome-text {
+    margin-top: var(--spacing-lg);
+  }
+
+  .description {
+    margin: 0 auto var(--spacing-md);
+  }
+
+  .cta-buttons {
+    justify-content: center;
+  }
+
+  .about-content {
+    flex-direction: column;
+  }
+
+  .contact-content {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 14px;
+  }
+
+  .nav-links,
+  .nav-socials {
+    display: none;
+  }
+
+  .burger {
+    display: block;
+  }
+
+  .title {
+    font-size: 3rem;
+  }
+
+  .form-row {
+    flex-direction: column;
+  }
+
+  .footer-content {
+    flex-direction: column;
+    gap: var(--spacing-lg);
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    gap: var(--spacing-sm);
+    text-align: center;
+  }
+
+  .projects-filter {
+    overflow-x: auto;
+    padding-bottom: var(--spacing-sm);
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .title {
+    font-size: 2.5rem;
+  }
+
+  .section-title {
+    font-size: 2rem;
+  }
+
+  .skills-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
